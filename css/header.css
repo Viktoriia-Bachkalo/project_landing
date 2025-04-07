@@ -1,0 +1,47 @@
+header {
+    /* background-image: url("../img/"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: blueviolet;
+    background-blend-mode: multiply;
+}
+
+
+
+.cols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.col {
+    background-color: #ccc;
+    min-height: 100px;
+}
+
+.col.c1 {
+    width: 25%;
+}
+
+.col.c2 {
+    width: 25%;
+}
+
+
+@media screen and (max-width:767px) {
+    
+}
+@media screen and (max-width:560px) {
+    .cols {
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .col.c1,
+    .col.c2,
+    .col.c3{
+        width: 100%;
+    }
+}

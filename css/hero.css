@@ -1,0 +1,48 @@
+#hero {
+    background-image: url('../img/main_photo.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-color: rgba(10,10,10,.9);
+    background-blend-mode: multiply;
+
+}
+
+#hero h1 {
+    color: #fff;
+    font-size: clamp(24px, 7vw, 70px);
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 200px;
+}
+
+.hero__subtitle {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.hero-top-overlay {
+  height: 105px;
+  background-color: #000;
+  mix-blend-mode: multiply;
+}
+
+.hero__button {
+    text-align: center;
+    background-color: #6600FF;
+    color: #fff;
+    font-family: 'Cy Grotesk', sans-serif;
+    padding: 30px 60px 30px 60px;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 32px;
+
+  }
+
+  .hero__button:hover {
+    background-color: #fff;
+    color: #000;
+  }

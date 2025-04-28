@@ -40,9 +40,9 @@
 }
 /* Кінець блоку змінних проєкту */
 
+
+
 .wrapper {
-    display: flex;
-    flex-direction:column;
     min-height: 100dvh;
     margin-left: auto;  /* Центрування блочного елементу по-горизонталі */
     margin-right: auto; /* Центрування блочного елементу по-горизонталі */
@@ -63,8 +63,9 @@
     max-width: var(--max-width);
 }
 
-header.container > .inside {  
+header.container {  
     padding-top: 0;
+    min-height: 0;
 }
 
 footer {

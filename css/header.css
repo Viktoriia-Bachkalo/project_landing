@@ -1,47 +1,35 @@
 header {
-    /* background-image: url("../img/"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-color: blueviolet;
-    background-blend-mode: multiply;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* щоб поверх усього */
+    background-color: white; 
+    padding: 10px 20px; /* для внутрішніх відступів */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
 
-
-
-.cols {
+.header {
+    height: 105px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.col {
-    background-color: #ccc;
-    min-height: 100px;
+.header__logo-img {
+    height: 40px;
+    width: 168px;
 }
 
-.col.c1 {
-    width: 25%;
+.header__burger-menu {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.header__burger-menu-img {
+    height: 100%;
+    width: 100%;
 }
 
-.col.c2 {
-    width: 25%;
-}
-
-
-@media screen and (max-width:767px) {
-    
-}
-@media screen and (max-width:560px) {
-    .cols {
-        gap: 0;
-        flex-wrap: wrap;
-    }
-
-    .col.c1,
-    .col.c2,
-    .col.c3{
-        width: 100%;
-    }
-}

@@ -3,96 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing project🤷‍♀️</title>
+    <title>Cosv3re_landing-page</title>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    
 </head>
-<body id="top">
-    <!-- Navigation section -->
-    <nav>
-        <div class="navbar">
-            <a href="#top" class="logo">
-                <img src="content/logo.svg" alt="Логотип проєкту">
-                <span>Stickers</span>
-            </a>
-            <div class="navigation">
+<body>
+    <header class="header container">
 
-                <ul class="level_1">
-                    <li><a class="nav-link" href="#top">Головна</a></li>
-                    <li><a class="nav-link" href="#s1">Про продукт</a></li>
-                    <li><a class="nav-link" href="#s2">Прайс</a></li>
-                    <li><a class="nav-link" href="#s3">Контакти</a></li>
-                </ul>
-            </div>
-            <div>
-                <button class="nav-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+        <div class="header__logo-img">
+            <img src="./content/logo.svg" alt="logo_cosv3re">
         </div>
-    </nav>
-    <!-- END of Navigation section -->
 
-    <!-- C O N T N E N T   W R A P P E R -->
-    <div class="wrapper">
+        <a class="header__burger-menu" id="burger">
+            <img class="header__burger-menu-img" src="./content/burger.svg" alt="">
+        </a>
+        <nav class="nav-menu" id="menu">
+            <ul>
+              <li><a href="#">Головна</a></li>
+              <li><a href="#">Про продукт</a></li>
+              <li><a href="#">Прайс</a></li>
+              <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="wrapper">
 
-        <!-- Start of the Header section -->
-        <header class="container">
+        <div class="hero-top-overlay"></div>
+
+        <section id="hero" class="container">
             <div class="inside">
-                <div>
-                    <div class="col c1">
-                        <h2>Текст заголовку другого рівня</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem exercitationem necessitatibus voluptatem soluta perferendis voluptas doloribus minima, fugit veritatis quasi accusantium officiis recusandae? Distinctio autem architecto eos veritatis a perferendis.</p>
-                        <a href="#s2" class="button">Button text</a>
-                    </div>
+                <h1>
+                    Твоя душа <br>
+                    бажає стікерів?
+                </h1>
+                <p class="hero__subtitle">
+                    Якісні вологостійкі наклейки, які можна клеїти скрізь або просто милуватися ними;)
+                </p>
+                <a href="#order" class="hero__button">
+                    ORDER
+                </a>
 
-                    <div class="col c2">
-                        <div class="img-box">
-                            <img src="img/main_photo.JPG" alt="main-photo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- END of the Header section -->
-
-        <!-- Section #s1 -->
-        <section id="s1" class="container">
-            <div class="inside">
-            </div>
-        </section>
-            
-        <!-- Section #s2 -->
-        <section id="s2" class="container">
-            <div class="inside">
-            </div>
+           </div>
         </section>
 
-        <!-- Section #s3 -->
-        <section id="s3" class="container">
+        <section id="about" class="container">
             <div class="inside">
+
             </div>
         </section>
 
-        <!-- Start of the Footer section -->
+        <section id="price" class="container">
+            <div class="inside">
+
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <div class="inside">
+
+            </div>
+        </section>
+
         <footer class="container">
-            <div class="inside">
-            </div>
+
         </footer>
-        <!-- END of the Footer section -->
 
-    </div>
+    </main>
 
-    <!-- Scripts in project -->
-    <script src="js/nav.js"></script>
 
-    <!-- End of Scripts in project -->
+
+    <script src="./js/burger.js" defer></script>
 </body>
 </html>

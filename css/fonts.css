@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Cy Grotesk';
+    src: url('../fonts/CyGroteskFont.otf');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Cy Grotesk', sans-serif;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+}

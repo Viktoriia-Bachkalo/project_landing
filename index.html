@@ -29,10 +29,10 @@
       </a>
       <nav class="nav-menu" id="menu">
         <ul>
-          <li><a href="#">Головна</a></li>
-          <li><a href="#">Про продукт</a></li>
-          <li><a href="#">Прайс</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="#">Main</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Price</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -42,54 +42,53 @@
 
       <section id="hero" class="container hero__container">
         <div class="inside">
-          <h1>Твоя душа бажає стікерів?</h1>
+          <h1>Does your <br> soul desire <br> stickers?</h1>
 
           <p class="hero__subtitle">
-            Якісні вологостійкі наклейки, які можна клеїти скрізь або просто
-            милуватися ними;)
+            High-quality moisture-resistant stickers that you can stick everywhere or just admire 
           </p>
 
           <a href="#order" class="hero__button button">ORDER</a>
         </div>
       </section>
 
-      <section id="about" class="container about__container">
+      <div class="container price-about__container">
         <div class="inside">
-          <div class="about-catalog">
-            <div class="about-catalog__price container">
-              <div class="about-catalog__text">
-                <h4 class="about-catalog__title">price</h4>
+          <section id="price" class="price">
+            <div class="price__container container">
+              <div class="price__text">
+                <h4 class="price__title">price</h4>
 
-                <p class="about-catalog__description">How much?</p>
+                <p class="price__description">How much?</p>
               </div>
 
-              <div class="about-catalog__price-value">
-                <h1 class="about-catalog__price-amount">
+              <div class="price__value">
+                <h1 class="price__amount">
                   only <br />
                   80₴
                 </h1>
-                <p class="about-catalog__price-unit">/1 sheet</p>
+                <p class="price__unit">/1 sheet</p>
               </div>
             </div>
 
-            <div class="about-sheets">
+            <div class="price__sheets">
               <img
                 src="./img/stickers_sheet1.jpg"
-                class="about-sheets__sheet about-sheets__sheet-white"
+                class="price__sheet price__sheet-white"
                 alt="stickers sheet"
               />
 
               <img
                 src="./img/stickers_sheet2.jpg"
-                class="about-sheets__sheet about-sheets__sheet-black"
+                class="price__sheet price__sheet-black"
                 alt="stickers sheet"
               />
             </div>
 
-            <a href="" class="button about-sheets__choose-button">choose</a>
-          </div>
+            <a href="" class="button price__choose-button">choose</a>
+          </section>
 
-          <div class="about container">
+          <section id="about" class="about container">
             <div>
               <h1 class="about__title">about</h1>
 
@@ -103,7 +102,7 @@
                 <p class="about-article__description">
                   Hi, I'm Viktoriia, an aspiring designer. I love to stick
                   everything with stickers and am always open to new
-                  suggestions)
+                  suggestions:)
                 </p>
               </article>
 
@@ -171,19 +170,42 @@
                 </p>
               </article>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
 
-      <section id="price" class="container">
-        <div class="inside"></div>
-      </section>
+      <footer id="contact" class="contact container">
+        <div class="inside">
+            <div class="contact__text">
+                <h2>
+                    Contact me
+                </h2>
+                <p>
+                    Want to order or have questions?
+                </p>
+            </div>
+            
 
-      <section id="contact" class="container">
-        <div class="inside"></div>
-      </section>
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="tel" placeholder="Phone number" required />
+                <textarea placeholder="Why are you contacting me?" required></textarea>
+                <button type="submit">SEND</button>
+            </form>
 
-      <footer class="container"></footer>
+            <div class="social-links">
+                <a href="https://t.me/tyzichok" target="_blank">
+                <img src="content/icon_telegram.svg" alt="Telegram" />
+                @tyzichok
+                </a>
+                <a href="https://instagram.com/cosv3re" target="_blank">
+                <img src="content/icon_instagram.svg" alt="Instagram" />
+                @cosv3re
+                </a>
+            </div>
+        </div>
+      </footer>
+
     </main>
 
     <script src="./js/burger.js" defer></script>

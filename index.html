@@ -1,83 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cosv3re_landing-page</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./css/style.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header class="header container">
+      <div class="header__logo-img">
+        <img src="./content/logo.svg" alt="logo_cosv3re" />
+      </div>
 
-        <div class="header__logo-img">
-            <img src="./content/logo.svg" alt="logo_cosv3re">
-        </div>
-
-        <a class="header__burger-menu" id="burger">
-            <img class="header__burger-menu-img" src="./content/burger.svg" alt="">
-        </a>
-        <nav class="nav-menu" id="menu">
-            <ul>
-              <li><a href="#">Головна</a></li>
-              <li><a href="#">Про продукт</a></li>
-              <li><a href="#">Прайс</a></li>
-              <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
+      <a class="header__burger-menu" id="burger">
+        <img
+          class="header__burger-menu-img"
+          src="./content/burger.svg"
+          alt=""
+        />
+      </a>
+      <nav class="nav-menu" id="menu">
+        <ul>
+          <li><a href="#">Головна</a></li>
+          <li><a href="#">Про продукт</a></li>
+          <li><a href="#">Прайс</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </nav>
     </header>
-    
+
     <main class="wrapper">
+      <!-- <div class="hero-top-overlay"></div> -->
 
-        <div class="hero-top-overlay"></div>
+      <section id="hero" class="container hero__container">
+        <div class="inside">
+          <h1>Твоя душа бажає стікерів?</h1>
 
-        <section id="hero" class="container">
-            <div class="inside">
-                <h1>
-                    Твоя душа <br>
-                    бажає стікерів?
+          <p class="hero__subtitle">
+            Якісні вологостійкі наклейки, які можна клеїти скрізь або просто
+            милуватися ними;)
+          </p>
+
+          <a href="#order" class="hero__button button">ORDER</a>
+        </div>
+      </section>
+
+      <section id="about" class="container about__container">
+        <div class="inside">
+          <div class="about-catalog">
+            <div class="about-catalog__price container">
+              <div class="about-catalog__text">
+                <h4 class="about-catalog__title">price</h4>
+
+                <p class="about-catalog__description">How much?</p>
+              </div>
+
+              <div class="about-catalog__price-value">
+                <h1 class="about-catalog__price-amount">
+                  only <br />
+                  80₴
                 </h1>
-                <p class="hero__subtitle">
-                    Якісні вологостійкі наклейки, які можна клеїти скрізь або просто милуватися ними;)
+                <p class="about-catalog__price-unit">/1 sheet</p>
+              </div>
+            </div>
+
+            <div class="about-sheets">
+              <img
+                src="./img/stickers_sheet1.jpg"
+                class="about-sheets__sheet about-sheets__sheet-white"
+                alt="stickers sheet"
+              />
+
+              <img
+                src="./img/stickers_sheet2.jpg"
+                class="about-sheets__sheet about-sheets__sheet-black"
+                alt="stickers sheet"
+              />
+            </div>
+
+            <a href="" class="button about-sheets__choose-button">choose</a>
+          </div>
+
+          <div class="about container">
+            <div>
+              <h1 class="about__title">about</h1>
+
+              <p>Who, where, why?</p>
+            </div>
+
+            <div class="about-articles__container">
+              <article class="about-article">
+                <h1 class="about-article__title">who?</h1>
+
+                <p class="about-article__description">
+                  Hi, I'm Viktoriia, an aspiring designer. I love to stick
+                  everything with stickers and am always open to new
+                  suggestions)
                 </p>
-                <a href="#order" class="hero__button">
-                    ORDER
-                </a>
+              </article>
 
-           </div>
-        </section>
+              <article class="about-article">
+                <h1 class="about-article__title">where?</h1>
 
-        <section id="about" class="container">
-            <div class="inside">
+                <p class="about-article__description">
+                  You can still see and buy my stickers at these links:
+                </p>
 
+                <div class="about-article__icons">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.66317 0C4.29934 -1.00559e-07 2.99133 0.541609 2.02677 1.50573C1.0622 2.46986 0.520055 3.77757 0.519531 5.14131V18.8567C0.519531 20.2208 1.06145 21.529 2.02607 22.4936C2.99069 23.4581 4.29899 24 5.66317 24H19.3795C20.7434 23.9995 22.0512 23.4574 23.0154 22.4929C23.9796 21.5284 24.5212 20.2205 24.5212 18.8567V5.14131C24.5207 3.77791 23.9788 2.4705 23.0147 1.50643C22.0505 0.542363 20.743 0.000523478 19.3795 0H5.66317ZM20.859 5.14921C20.859 5.54209 20.7029 5.91888 20.4251 6.19669C20.1473 6.47449 19.7705 6.63057 19.3776 6.63057C18.9847 6.63057 18.6078 6.47449 18.33 6.19669C18.0522 5.91888 17.8961 5.54209 17.8961 5.14921C17.8961 4.75633 18.0522 4.37954 18.33 4.10173C18.6078 3.82392 18.9847 3.66785 19.3776 3.66785C19.7705 3.66785 20.1473 3.82392 20.4251 4.10173C20.7029 4.37954 20.859 4.75633 20.859 5.14921ZM12.5233 7.89071C11.4337 7.89071 10.3886 8.32355 9.61812 9.094C8.84761 9.86446 8.41474 10.9094 8.41474 11.999C8.41474 13.0886 8.84761 14.1336 9.61812 14.904C10.3886 15.6745 11.4337 16.1073 12.5233 16.1073C13.613 16.1073 14.658 15.6745 15.4285 14.904C16.1991 14.1336 16.6319 13.0886 16.6319 11.999C16.6319 10.9094 16.1991 9.86446 15.4285 9.094C14.658 8.32355 13.613 7.89071 12.5233 7.89071ZM6.43748 11.999C6.43748 10.3856 7.07846 8.83823 8.21941 7.69736C9.36036 6.5565 10.9078 5.91556 12.5214 5.91556C14.1349 5.91556 15.6824 6.5565 16.8233 7.69736C17.9643 8.83823 18.6052 10.3856 18.6052 11.999C18.6052 13.6124 17.9643 15.1598 16.8233 16.3007C15.6824 17.4415 14.1349 18.0825 12.5214 18.0825C10.9078 18.0825 9.36036 17.4415 8.21941 16.3007C7.07846 15.1598 6.43748 13.6124 6.43748 11.999Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 41"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M40 6.37857C40 3.25922 37.4713 0.730469 34.3519 0.730469H5.6481C2.52875 0.730469 0 3.25922 0 6.37857V35.0824C0 38.2018 2.52875 40.7305 5.6481 40.7305H34.3519C37.4713 40.7305 40 38.2018 40 35.0824V6.37857ZM33.138 18.1763C30.5572 18.2051 28.1525 17.4249 26.041 15.9799V26.1236C26.041 30.6319 22.9551 34.5046 18.5913 35.516C12.6379 36.8743 7.59805 32.5683 6.9624 27.4243C6.2977 22.2801 9.5785 17.7717 14.607 16.7602C15.5896 16.558 17.0674 16.558 17.8299 16.7314V22.1644C17.5953 22.1068 17.3756 22.0489 17.1445 22.02C15.1793 21.6732 13.2759 22.6558 12.4956 24.4475C11.7153 26.2394 12.2376 28.3201 13.827 29.534C15.1563 30.5743 16.6313 30.7187 18.1341 30.0251C19.6369 29.3606 20.4445 28.1468 20.6178 26.4995C20.6467 26.2684 20.6452 26.0082 20.6452 25.7481V6.24077C20.6452 5.69172 20.6495 5.71567 21.1986 5.71567H25.5046C25.8225 5.71567 25.9382 5.76142 25.9671 6.13732C26.1981 9.48967 28.7434 12.3447 32.009 12.7782C32.3558 12.836 32.7274 12.8589 33.138 12.8877V18.1763Z"
+                      fill="white"
+                    />
+                  </svg>
+
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.87743 0.000823975C2.02291 0.000823975 0.519531 1.5041 0.519531 3.35849V20.6415C0.519531 22.4959 2.02292 23.9991 3.87744 23.9991H21.1616C23.0161 23.9991 24.5195 22.4959 24.5195 20.6415V3.35849C24.5195 1.5041 23.0161 0.000823975 21.1616 0.000823975H3.87743ZM18.2442 17.9674L20.7385 6.20002C20.9599 5.16281 20.3658 4.75678 19.6869 5.01147L5.02392 10.6626C4.024 11.0539 4.03876 11.6149 4.85419 11.8696L8.60296 13.0434L17.3107 7.55836C17.7203 7.28522 18.093 7.43656 17.7867 7.7097L10.743 14.0769L10.47 17.9489C10.8611 17.9489 11.0308 17.7792 11.2337 17.5761L13.0675 15.8118L16.868 18.6134C17.5653 19.0046 18.0561 18.7979 18.2442 17.9674Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </article>
+
+              <article class="about-article">
+                <h1 class="about-article__title">why?</h1>
+
+                <p class="about-article__description">
+                  I have always dreamed of making my own stickers and seeing how
+                  people react to them. And also to admire them.
+                </p>
+              </article>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="price" class="container">
-            <div class="inside">
+      <section id="price" class="container">
+        <div class="inside"></div>
+      </section>
 
-            </div>
-        </section>
+      <section id="contact" class="container">
+        <div class="inside"></div>
+      </section>
 
-        <section id="contact" class="container">
-            <div class="inside">
-
-            </div>
-        </section>
-
-        <footer class="container">
-
-        </footer>
-
+      <footer class="container"></footer>
     </main>
 
-
-
     <script src="./js/burger.js" defer></script>
-</body>
+  </body>
 </html>

@@ -3,5 +3,4 @@ const menu = document.getElementById("menu");
 
 burger.addEventListener("click", () => {
   menu.classList.toggle("active");
-  console.log("yeah");
 });

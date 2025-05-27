@@ -37,7 +37,6 @@
   --logo-color-1: #fff; /* Основний колір тексту лого */
   --logo-color-2: #ccc; /* Другий колір тексту лого напр. (hover) */
 
-  
   --black: #000000;
   --transition-duration: 0.3s;
   --main-accent-color: #6600ff;
@@ -78,5 +77,5 @@ header.container {
 
 footer {
   margin-top: auto;
-  min-height: 530px;
+  /* min-height: 530px; */
 }

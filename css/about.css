@@ -10,7 +10,7 @@
 }
 
 .about {
-  margin-top: 50px;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -34,10 +34,21 @@
   align-items: center;
   gap: 10px;
 
-  padding: 30px;
-
   background-color: var(--black);
   color: var(--bg-color-1);
+}
+
+.about-article__img {
+  display: none;
+}
+
+.about-article__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  padding: 30px;
 }
 
 .about-article__title {
@@ -59,4 +70,37 @@
 
   display: flex;
   gap: 20px;
+}
+
+@media (min-width: 1024px) {
+  .about {
+    margin-top: 116px;
+  }
+
+  .price-about__container {
+    background-image: url("../img/stickers_background.png");
+  }
+
+  .about__title {
+    font-size: 50px;
+  }
+
+  .about-articles__container {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+  }
+
+  .about-article {
+    width: 33%;
+    height: 485px;
+  }
+
+  .about-article__img {
+    width: 100%;
+    height: 274px;
+    object-fit: cover;
+    display: inline;
+  }
 }

@@ -4,8 +4,12 @@
   margin-top: 155px;
 }
 
-.mosky__content {
+.mosky__content-mobile {
   margin-top: 41.5px;
+}
+
+.mosky__content-desktop {
+  display: none;
 }
 
 .mosky__title {
@@ -134,4 +138,61 @@
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+@media (min-width: 1024px) {
+  .mosky__content-mobile {
+    display: none;
+  }
+
+  .mosky__content-desktop {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 115px;
+  }
+
+  .mosky__images {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .mosky__text-and-images {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mosky__title {
+    font-size: 20px;
+  }
+
+  .mosky__description {
+    font-size: 18px;
+  }
+
+  .is-in-stock {
+    font-size: 18px;
+  }
+
+  .mosky__price {
+    font-size: 40px;
+  }
+
+  .price__content-top {
+    align-items: center;
+  }
+
+  .mosky__buy-button {
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .delivery-wrapper {
+    justify-content: unset;
+    gap: 60px;
+  }
 }

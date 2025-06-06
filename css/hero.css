@@ -23,6 +23,16 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 1024px) {
+  #hero h1 {
+    font-size: 75px;
+  }
+
+  .hero__container {
+    height: 900px;
+  }
+}
+
 .hero__subtitle {
   color: #fff;
   font-size: 14px;

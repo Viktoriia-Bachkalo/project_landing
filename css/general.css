@@ -1,5 +1,9 @@
 @import url("./layout.css");
 
+html {
+  scroll-behavior: smooth;
+}
+
 .button {
   display: flex;
   justify-content: center;

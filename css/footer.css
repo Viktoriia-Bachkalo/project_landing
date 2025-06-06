@@ -94,3 +94,9 @@ footer.contact .social-links img {
 .social-links img {
   filter: brightness(0) invert(1);
 }
+
+@media (min-width: 1024px) {
+  footer.contact h2 {
+    font-size: 50px;
+  }
+}

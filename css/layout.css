@@ -25,6 +25,7 @@
   --nav-color-4: #fff; /* Колір головного меню 4 (hover) після прокрутки */
   --max-width: 1280px; /* Максимальна ширина секцій */
   --mob-padding: 20px; /* Горизонтальні внутрішні відступи актуальні для смартфонів */
+  --desk-padding: 80px;
   --ver-padding: 50px; /* Вертикальні внутрішні відступи у секціях */
   --bord-radius: 20px; /* Радіус заокруглення кутів */
   --brg-width: 30px; /* Ширина бургера */
@@ -40,6 +41,8 @@
   --black: #000000;
   --transition-duration: 0.3s;
   --main-accent-color: #6600ff;
+
+  --desktop-width: 1024px;
 }
 /* Кінець блоку змінних проєкту */
 
@@ -78,4 +81,15 @@ header.container {
 footer {
   margin-top: auto;
   /* min-height: 530px; */
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: var(--desk-padding);
+    padding-right: var(--desk-padding);
+  }
+
+  .container > .inside {
+    gap: 40px;
+  }
 }
